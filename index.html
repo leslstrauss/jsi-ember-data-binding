@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title></title>
+    <title>Ember.js Data Bining</title>
   </head>
 
   <body>
@@ -9,6 +9,17 @@
   <script src="handlebars-1.1.2.js"></script>
   <script src="ember-1.7.0.js"></script>
   <script src="app.js"></script>
+
+  <script type="text/x-handlebars" data-template-name="application">
+    <h1>Ember.js Data Binding</h1>
+    {{ outlet }}
+  </script>
+  <script type="text/x-handlebars" data-template-name="index">
+    Name: {{ input type="text" value=name }}
+    <br></br>
+    Welcome to Ember.js, {{ name }}
+  </script>
+
 
   </body>
 </html>
